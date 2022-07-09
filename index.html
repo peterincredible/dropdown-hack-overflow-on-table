@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="./jquery-nice-select-1.1.0/css/nice-select.css"/>
+        <link rel="stylesheet" href="./font-awesome.css"/>
+
+        <style>
+            .hack-wrapper{
+               /* overflow-y: clip; 
+                overflow-y:visible; */
+            }
+           .table-container{
+               width: 500px;
+               overflow-y: visible !important; 
+               height:auto;
+                 overflow-x:auto;
+           }
+
+           table{
+            min-width: 800px;
+           }
+
+           .nice-select{
+            position: static;
+            /* width: 150px; */
+           }
+
+           /* .nice-select .icon-wrapper{
+               position: relative;
+           }
+           .nice-select .icon-wrapper .icon{
+               position: absolute;
+               left: 10px;
+
+           } */
+
+           .nice-select .current{
+            position: relative;
+           }
+
+           .nice-select .current::after{
+            border-bottom: 2px solid #999;
+            border-right: 2px solid #999;
+            content: '';
+            display: block;
+            height: 5px;
+            margin-top: -4px;
+            pointer-events: none;
+            position: absolute;
+            right: -12px;
+            top: 50%;
+            -webkit-transform-origin: 66% 66%;
+            -ms-transform-origin: 66% 66%;
+            transform-origin: 66% 66%;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transition: all 0.15s ease-in-out;
+            transition: all 0.15s ease-in-out;
+            width: 5px;
+           }
+
+           .nice-select.open .current::after{
+            -webkit-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+           }
+
+           .nice-select::after{
+            /* content: none; */
+           }
+           .test{}
+           .test::after{
+            /* content: ">"; */
+           }
+
+          
+        </style>
+
+    </head>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="hack-wrapper">
+                <div class="table-container">
+                    <table class="table table-responsive">
+                        <thead>
+                        <th>
+                            <tr>
+                                <th scope="col">Items</th>
+                                <th scope="col">Expenditure</th>
+                                <th>Action</th>
+                            </tr>
+                        </th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>
+                                <p>
+                                    <select class="select">
+                                        <option value="1">Action</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        
+                                    </select>
+                                </p>
+                            </td>
+            
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>
+                                <p>
+                                    <select class="select">
+                                        <option value="1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                    
+                                    </select>
+                                </p>
+                            </td>
+            
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>
+                                <p>
+                                    <select class="select">
+                                        <option value="1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                    
+                                    </select>
+                                </p>
+                            </td>
+            
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>
+                                <p>
+                                    <select class="select">
+                                        <option value="1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                    
+                                    </select>
+                                </p>
+                            </td>
+                            <td>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                                    <li class="dropdown">Dropdown header</li>
+                                    
+                                    
+                                  </ul>
+                            </td>
+            
+                        </tr>
+                        </tbody>
+                </table>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-2"></div>
+
+    </div>
+    
+
+    <script src="./jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.select').niceSelect();
+            // let html = `<span class="icon-wrapper"><span class="icon"><i class="fa fa-arrow-down" aria-hidden="true"></i></span><span>`;
+            // $('.nice-select').append(html);
+
+            // $('.nice-select').on('click',function(e){
+            //        let target = $(e.target);
+            //      if(!target.hasClass('open')){
+            //         console.log('yes it is open')
+            //         $('.table-container').css( "overflow-x", "inherit" );
+            //      }else{
+            //         console.log('it is closed');
+            //         $('.table-container').css( "overflow-x", "auto" );
+            //      }
+            //      console.log('nice select clicked');
+            // });
+
+
+            function scrollLeft() {
+            $(".list").css("left", function() {
+                console.log($(this).parent().position().left)
+                return $(this).parent().position().left;
+                // return $(this).parent().offset().left;
+               
+                
+
+            });
+            $(".list").css("top", function() {
+                return $(this).parent().position().top + 40;
+                // return $(this).parent().offset().top + 40;
+
+            });
+            }
+
+            $(".table-container").scroll(function() {
+                if($('.nice-select').hasClass('open')){
+                    $('.nice-select').removeClass('open');
+                }
+                scrollLeft();
+            });
+           
+
+            scrollLeft();
+        });
+    
+        // console.log( $(".list").parent());
+        // console.log( $(".list").parent());
+        // console.log( $(".list").offset());
+
+        
+      
+       
+    </script>
+
+ </body>
+
+</html>
